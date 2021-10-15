@@ -5,7 +5,7 @@ text = get_audio()
 if "how are you" in text:
 	speak("fine thanks what about you?")
 	text = get_audio()
-	if text== "good" or text== "perfect" or text== "not bad" or text== "very good":
+	if "not bad" in text or "well" in text or "not" not in text and "good" in text or "perfect" in text:
 		speak("thats perfect!")
 	else:
 		speak("do you want to make you happy?")
@@ -28,3 +28,4 @@ elif text == "what's my name" or text == "do you know my name" or text == "what 
 		speak("hahaha")
 	else: 
 		speak("please ask 1 question and answer my question")
+
