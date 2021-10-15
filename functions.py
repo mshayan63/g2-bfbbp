@@ -21,19 +21,3 @@ def get_audio():
 		except Exception as e:
 			print("Exeption :" + str(e))
 	return said
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
