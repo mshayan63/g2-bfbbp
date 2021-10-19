@@ -1,3 +1,4 @@
+import os
 from functions import speak
 from functions import get_audio
 a=get_audio()
