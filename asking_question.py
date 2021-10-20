@@ -3,12 +3,16 @@ from functions import get_audio
 #question 1
 text = get_audio()
 if "hello" in text or "hi" in text or "good morning" in text or "good afternoon" in text or "good night" in text or "good evening" in text or "it is a pleasure to meet you" in text or "it is nice to meet you" in text or "what is app" in text or "pleased to meet you" in text or "it is a pleaser" in text:
+
 	speak("hello!it is a pleaser to meet you.")
+	text = get_audio()
 	if "but you are not near me" in text or "we just speaking" in text or "i can not see you and you cant see me" in text:
 		speak("hahaha!it is a idiom")
+		text = get_audio()
 		if "Do you know other terms?" in text or "can you say me other idioms" in text:
 			speak("i can say 5 idioms. say a number from 1 to 5 and listen to my idiom. if you want listen other idiom or your last idiom say a number again.if you want finish speaking about idioms,say finish.")
 			while text!="finish":
+				text = get_audio()
 				if "one" in text or "1" in text:
 					speak("The lights are on but nobody’s home – used to describe a stupid person.Example: She really has no clue- the lights are on but nobody’s home!")
 				if "two" in text or "2" in text:
