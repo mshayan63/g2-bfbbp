@@ -28,5 +28,16 @@ a=get_audio()
 b=a.split(" ")
 if 'please'==b[-1]:
         b.pop()
-a=b.pop()
+        if 'open'==b[0]:
+                b.pop(0)
+elif 'please'==b[0]:
+        b.pop(0)
+        if 'open'==b[0]:
+                b.pop(0)
+if 'open'==b[0]:
+        b.pop(0)
+a=b[0]
+for i in range(len(b)):
+     if i>0:
+        a=a+' '+b[i]   
 os.startfile(a)
